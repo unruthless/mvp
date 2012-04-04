@@ -90,36 +90,89 @@ a:hover, a:active { outline: 0; }
    Typography
    ========================================================================== */
 
-abbr[title] { border-bottom: 1px dotted; }
+abbr[title] {
+  border-bottom: 1px dotted;
+}
 
-b, strong { font-weight: bold; }
+b,
+strong {
+  font-weight: bold;
+}
 
-blockquote { margin: 1em 40px; }
+blockquote {
+  margin: 1em 40px;
+}
 
-dfn { font-style: italic; }
+dfn {
+  font-style: italic;
+}
 
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
-ins { background: #ff9; color: #000; text-decoration: none; }
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
 
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
 
-/* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
 
-/* Improve readability of pre-formatted text in all browsers */
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
+q {
+  quotes: none;
+}
 
-small { font-size: 85%; }
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
 
-/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+small {
+  font-size: 85%;
+}
+
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/futura/futurastd-medium-webfont.eot');
+  src: url('../fonts/futura/futurastd-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/futura/futurastd-medium-webfont.woff') format('woff'),
+       url('../fonts/futura/futurastd-medium-webfont.ttf') format('truetype'),
+       url('../fonts/futura/futurastd-medium-webfont.svg#FuturaStdMedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* =============================================================================
    Lists
@@ -250,8 +303,9 @@ td { vertical-align: top; }
 
 /* Temporary styles. These are meant to reproduce the mockup. Do not include in production. */
 body {
-  font-family: Futura, Helvetica, sans-serif;
+  font-family: 'Futura', 'Helvetica', sans-serif;
 }
+
 section {
   display: block;
   border-bottom: 1px solid #999;
