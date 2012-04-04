@@ -162,9 +162,8 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
-
 @font-face {
-  font-family: 'Futura';
+  font-family: 'FuturaTEST';
   src: url('../fonts/futura/futurastd-medium-webfont.eot');
   src: url('../fonts/futura/futurastd-medium-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/futura/futurastd-medium-webfont.woff') format('woff'),
@@ -173,6 +172,19 @@ sub { bottom: -0.25em; }
   font-weight: normal;
   font-style: normal;
 }
+
+/* Temporary styles. These are meant to reproduce the mockup. Do not include in production. */
+body {
+  font-family: 'FuturaTEST', 'Helvetica', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+
+
+
 
 /* =============================================================================
    Lists
@@ -239,42 +251,18 @@ button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: ba
 
 button, input { line-height: normal; }
 
-/*
- * 1. Display hand cursor for clickable form elements
- * 2. Allow styling of clickable form elements in iOS
- * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
- */
-
 button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
 
-/*
- * Re-set default cursor for disabled elements
- */
-
 button[disabled], input[disabled] { cursor: default; }
-
-/*
- * Consistent box sizing and appearance
- */
 
 input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
 input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
 
-/*
- * Remove inner padding and border in FF3/4: h5bp.com/l
- */
-
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-
-/*
- * 1. Remove default vertical scrollbar in IE6/7/8/9
- * 2. Allow only vertical resizing
- */
 
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
-/* Colors for form validity */
 input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
 
@@ -299,19 +287,21 @@ td { vertical-align: top; }
    ========================================================================== */
 
 
-
-
-/* Temporary styles. These are meant to reproduce the mockup. Do not include in production. */
-body {
-  font-family: 'Futura', 'Helvetica', sans-serif;
-}
-
 section {
   display: block;
   border-bottom: 1px solid #999;
 }
-.b {}
-.s {}
+
+.b {
+  font-size: 2.7em;
+}
+.s {
+  font-size: 1.6em;
+}
+
+#guide {
+  margin: 1em 3em;
+}
 
 
 
@@ -321,8 +311,12 @@ section {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 50em) {
+
+  #guide {
+    margin: 1em 9em;
+  }
+
 }
 
 
