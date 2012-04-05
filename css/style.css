@@ -301,6 +301,11 @@ section {
   margin: 1em 3em;
 }
 
+.imagewrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
 /* Prev/Next Navigation */
 
 nav {
@@ -339,8 +344,6 @@ nav a.next:hover,
 nav a.next:active {
   background-position: -60px 0;
 }
-
-
 
 
 /* ==|== media queries ======================================================
