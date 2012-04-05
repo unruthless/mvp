@@ -325,24 +325,30 @@ nav a {
   text-indent: -999em;
 }
 
-nav a.prev {
+nav #prev {
   left: 0;
   background-position: 0 -60px;
 }
 
-nav a.prev:hover,
-nav a.prev:active {
+nav #prev:hover,
+nav #prev:active {
   background-position: 0 0;
 }
 
-nav a.next {
+nav #next {
   right: 0;
   background-position: -60px -60px;
 }
 
-nav a.next:hover,
-nav a.next:active {
+nav #next:hover,
+nav #next:active {
   background-position: -60px 0;
+}
+
+.obnoxious {
+  font-size: 20em;
+  color:#F00;
+  background:aqua;
 }
 
 
