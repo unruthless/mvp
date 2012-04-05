@@ -12,16 +12,16 @@ $(document).ready(function(){
 // TODO: not working
 $('#prev').click(function(event) {
   event.preventDefault();
-  var currentPage = $('section:not(hidden)');
-  currentPage.addClass('hidden').prev().removeClass('hidden');
+  var index = $('section:not(.hidden)').index();
+  jQuery('section').addClass('hidden');
+  jQuery(jQuery('section').get(index - 1)).removeClass('hidden');
 });
 
 // When the user clicks the next link, hide the visible section and show the succeeding section
 // TODO: not working
 $('#next').click(function(event) {
   event.preventDefault();
-  $('section:not(hidden)')
-    .addClass('hidden')
-    .next()
-    .removeClass('hidden');
+  var index = $('section:not(.hidden)').index();
+  jQuery('section').addClass('hidden');
+  jQuery(jQuery('section').get(index + 1)).removeClass('hidden');
 });
