@@ -329,7 +329,7 @@ section {
 /* Prev/Next Navigation */
 
 nav {
-  background: #F00;
+  background: #FFF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -368,7 +368,7 @@ nav #next:active {
 .obnoxious {
   font-size: 20em;
   color:#F00;
-  background:aqua;
+  background:white;
 }
 
 
