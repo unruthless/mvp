@@ -336,8 +336,10 @@ nav {
   width: 100%;
 }
 
+
+
 nav a {
-  background: #0F0 url('../images/sprites.png') no-repeat left top;
+  background: #FFF url('../images/sprites.png') no-repeat left top;
   display: block;
   position: absolute;
   width: 31px;
@@ -367,7 +369,7 @@ nav #next:active {
 
 .obnoxious {
   font-size: 20em;
-  color:#F00;
+  color:#FFF;
   background:white;
 }
 
